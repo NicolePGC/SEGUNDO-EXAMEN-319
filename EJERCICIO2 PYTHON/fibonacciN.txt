@@ -1,0 +1,14 @@
+suma=lambda a=0, b=0, c=0: a+b+c
+def fibo (suma,n1):
+    a=0
+    b=1
+    c=1
+    for i in range(0,n1):
+        print(a)
+        d=suma(a,b,c)
+        a=b
+        b=c
+        c=d
+n=int(input("introduzca n: "))
+fi=fibo(suma,n)
+print (fi)

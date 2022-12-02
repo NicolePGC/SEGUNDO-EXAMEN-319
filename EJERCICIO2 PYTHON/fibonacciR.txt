@@ -1,0 +1,11 @@
+suma=lambda a=0, b=0, c=0: a+b+c
+n=int(input("introduzca n: "))
+a=0
+b=1
+c=1
+def fibon(suma,a,b,c,n):
+    print(a)
+    if n>1:
+        d=suma(a,b,c)
+        fibon(suma,b,c,d,n-1)
+print(fibon(suma,a,b,c,n)) 
